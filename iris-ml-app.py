@@ -4,7 +4,6 @@ from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier
 
 st.write("""
-# Nur Azua - My first application
 # Simple Iris Flower Prediction App
 
 This app predicts the **Iris flower** type!
@@ -23,6 +22,8 @@ def user_input_features():
             'petal_width': petal_width}
     features = pd.DataFrame(data, index=[0])
     return features
+
+df = user_input_features()
 
 st.subheader('User Input parameters')
 st.write(df)
@@ -46,4 +47,3 @@ st.write(iris.target_names[prediction])
 
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
-
