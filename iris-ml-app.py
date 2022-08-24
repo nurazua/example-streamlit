@@ -10,11 +10,6 @@ st.write("""
 This app predicts the **Iris flower** type!
 """)
 
-from PIL import Image
-all_iris = Image.open("iris photo.png")
-st.image(all_iris, 
-         caption='Three Iris Species <source: https://morioh.com/p/eafb28ccf4e3>')
-
 st.sidebar.header('User Input Parameters')
 
 def user_input_features():
@@ -28,8 +23,6 @@ def user_input_features():
             'petal_width': petal_width}
     features = pd.DataFrame(data, index=[0])
     return features
-
-df = user_input_features()
 
 st.subheader('User Input parameters')
 st.write(df)
@@ -53,3 +46,8 @@ st.write(iris.target_names[prediction])
 
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
+
+from PIL import Image
+image = Image.open('iris image.png')
+
+st.image(image, caption='Iris')
