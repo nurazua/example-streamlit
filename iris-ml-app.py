@@ -11,7 +11,7 @@ This app predicts the **Iris flower** type!
 """)
 
 from PIL import Image
-image = Image.open('iris.jpeg')
+image = Image.open('iris.jpg')
 
 st.image(image, caption='Iris')
 st.sidebar.header('User Input Parameters')
