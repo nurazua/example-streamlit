@@ -11,7 +11,7 @@ This app predicts the **Iris flower** type!
 """)
 
 from PIL import Image
-all_iris = Image.open("Iris Photo.png")
+all_iris = Image.open("iris photo.png")
 st.image(all_iris, 
          caption='Three Iris Species <source: https://morioh.com/p/eafb28ccf4e3>')
 
