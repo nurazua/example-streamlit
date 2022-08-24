@@ -49,6 +49,6 @@ st.subheader('Prediction Probability')
 st.write(prediction_proba)
 
 from PIL import Image
-st.image("https://www.gardendesign.com/pictures/images/900x705Max/site_3/iris-louisiana-black-gamecock-iris-beardless-louisiana-iris-shutterstock-com_12592.jpg", caption='Credit to GardenDesign')
+st.image("https://floralife.com/wp-content/uploads/2022/04/Iris_2560x1790.png", caption='Courtesy FLORALIFE')
 
 
